@@ -46,7 +46,7 @@ body{
 
 .wrapper .form-box.login{
     /*display: none;*/
-    transition: transform.18s ease;
+    transition: transform .18s ease;
     transform: translateX(0);
 }
 
@@ -62,7 +62,7 @@ body{
 
 .wrapper.active.form-box.register{
     transition: transform .18s ease;
-    transform: transaLateX(0)
+    transform: transLateX(0);
 }
 
 .wrapper .icon-close{
@@ -128,7 +128,7 @@ body{
 .remember-forgot{
     font-size: .9em;
     color:#162938;
-    font-weight: 500px;
+    font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
