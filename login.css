@@ -107,6 +107,13 @@ wrapper {
     color: #162938;
     font-weight: 500;
     pointer-events: none;
+    transition: .5s;
+}
+
+.ipunt-box input:focus ~ label,
+.ipunt-box input:valid ~ label {
+    top: -5px;
+
 }
 
 .input-box input{
