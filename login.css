@@ -1,35 +1,41 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-   background: url('images/veganmeal.jpg') no-repeat;
+    background: url('images/veganmeal.jpg') no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
-.wrapper{
+.hydrated {
+    visibility: inherit;
+}
+
+wrapper {
     position: relative;
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid rgb(255, 255, 255, .5);
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Corrected rgba syntax */
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    -webkit-backdrop-filter: blur(20px); /* Fallback for Safari */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Corrected rgba syntax */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transform: scale(0);
-    transition: transform .5 ease,height .2s ease ;
+    transition: transform 0.5s ease, height 0.2s ease; /* Separate transition effects with comma */
 }
  .wrapper.active.pop-up{
     transform: scale(1);
@@ -62,7 +68,7 @@ body{
 
 .wrapper.active.form-box.register{
     transition: transform .18s ease;
-    transform: transaLateX(0)
+    transform: transLateX(0)
 }
 
 .wrapper .icon-close{
@@ -79,16 +85,16 @@ body{
     align-items: center;
 }
 
-.form-box h2{
-    font-size: relative;
+.form-box h2 {
+    font-size: 1.5rem; /* Adjusted font-size */
     color: #162938;
     text-align: center;
 }
 
-.input-box{
+.input-box {
     position: relative;
-    width: 100vh;
-    height: 50vh;
+    width: 100%; /* Adjusted width */
+    height: auto; /* Adjusted height */
     border-bottom: 2px solid #162938;
     margin: 30px 0;
 }
@@ -125,17 +131,17 @@ body{
 
 }
 
-.remember-forgot{
+.remember-forgot {
     font-size: .9em;
-    color:#162938;
-    font-weight: 500px;
+    color: #162938;
+    font-weight: 500; /* Corrected font-weight */
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.remember-forgot label input{
-    accent-color: #162938;
+.remember-forgot label input {
+    color: #162938; /* Adjusted checkbox color */
     margin-right: 3px;
 }
 
