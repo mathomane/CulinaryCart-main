@@ -1,22 +1,11 @@
 const wrapper = document.querySelector('.wrapper');
-const container = document.querySelector('.container')
-const loginLink = document.querySelector('.login-link')
-const registerLink = document.querySelector('.register-link')
-const btnLogin = document.querySelector('.btn-login')
-const closePopup = document.querySelector('.close-popup')
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const bthPopup = document.querySelector('.bthLogin-popup');
+const iconClose = document.querySelector('.icon-close');
 
-registerLink?.addEventListener('click', () => {
-  container?.classList.add('active')
-})
+registerLink.addEventListener('click', () => wrapper.classList.add('active'));
+loginLink.addEventListener('click', () => wrapper.classList.remove('active'));
+bthPopup.addEventListener('click', () => wrapper.classList.add('active-popup'));
+iconClose.addEventListener('click', () => wrapper.classList.remove('active-popup'));
 
-loginLink?.addEventListener('click', () => {
-  container?.classList.remove('active')
-})
-
-btnLogin?.addEventListener('click', () => {
-  container?.classList.add('active-popup')
-})
-
-closePopup?.addEventListener('click', () => {
-  container?.classList.remove('active-popup')
-}) 
