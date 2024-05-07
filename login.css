@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: url('images/veganmeal.jpg') no-repeat;
-    background-position: center;
     background-size: cover;
-}
-
-.hydrated {
-    visibility: inherit;
 }
 
 wrapper {
@@ -68,14 +64,10 @@ wrapper {
 
 .wrapper.active.form-box.register{
     transition: transform .18s ease;
-<<<<<<< HEAD
     transform: transLateX(0)
-=======
-    transform: transLateX(0);
->>>>>>> 1f59ccb2fa21c357347fc52b69e9e34ffdd7e6d0
 }
 
-.wrapper .icon-close{
+.wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -83,10 +75,13 @@ wrapper {
     height: 45px;
     background: #162938;
     font-size: 2em;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .form-box h2 {
