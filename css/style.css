@@ -16,104 +16,69 @@ html{
 }
 
 body {
- 
+
    font-family: 'poppins', sans-serif;
    background-color: #f7f7f7;
    color: #333;
    font-family: 'poppins', sans-serif;
-   
 }
 
 header  {
- 
    background-color: #B1D8B7; /* Medium Green */
-
    color: #fff;
-
    padding: 20px;
-
    text-align: center;
-
 }
 
 header h1 {
    background-color: #B1D8B7; /* Medium Green */
-
    color: #fff;
-
    padding: 20px;
-
    text-align: center;
-
 }
 
 .heading h3 {
-  
-      color: #B1D8B7;
-  
-      padding: 10px;
-  
-      text-align: center;
-
-      font-size: 35px;
+    color: #B1D8B7;
+   padding: 10px;
+   text-align: center;
+   font-size: 35px;
 }
 
 .food-category {
    color: #B1D8B7;
-  
    padding: 10px;
-
    font-size: 30px;
 }
 
-
 .logo img {
- 
    width: 50px; /* Adjust the size of your logo */
 }
 
 .nav {
 
    margin-top: 20px;
-
 }
 .nav img {
-   
    width: 20px;
-   
    height: 20px;
-
    display: flex;
-
    justify-content: space-between;
-
    justify-content: flex-end;
-
    background: transparent;
-
    border-radius: 10px;
-
    gap: 10px;
-
-   
-
+   background-size: cover;
 }
 
 .nav li {
-
    display: inline-block;
-
    margin-right: 20px;
-
 } 
+
 .nav a {
-
    text-decoration: none;
-
    color: #189AB4;
-
    font-size: 16px;
-
 }
 .nav .nav-link {
    width: 20px;
@@ -121,8 +86,6 @@ header h1 {
    align-items: flex-end;
    justify-items: flex-end;
 }
-
-
 .container{
    max-width: 1200px;
    margin:0 auto;
@@ -239,7 +202,6 @@ header h1 {
    color:#444;
    padding:.5rem 0;
    font-size: 2.5rem;
-  
 }
 
 .products-preview .preview .stars{
@@ -298,81 +260,53 @@ header h1 {
 }
 
 /* Footer styles */
-
 footer {
 
    background-color: #5cb85c; /* Medium Green */
-
    color: #fff;
-
    text-align: center;
-
    padding: 20px 0;
-
    display: flex;
-
    justify-content: space-between;
-
    align-items: center;
-
 }
 
 .social-icons {
-
    display: flex;
-
 }
 
 .social-icon {
-
    color: #fff;
-
    font-size: 20px;
-
    margin-left: 10px;
-
 }
 
 .social-icon:hover {
-
    color: #f4d35e; /* Yellow */
-
 }
 
 .hero-image {
-
    width: 100%; /* Ensure the image fills the entire width of its container */
-
    max-height: 400px; /* Set a maximum height to prevent the image from becoming too tall */
-
    object-fit: cover; /* Ensure the image covers the entire container while maintaining its aspect ratio */
-
    border-radius: 10px; /* Add a border-radius for rounded corners, if desired */
-
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
-
 }
 
 @media (max-width:991px){
-
    html{
       font-size: 55%;
    }
-
 }
 
 @media (max-width:768px){
-
    .products-preview .preview img{
       height: 25rem;
    }
-
 }
 
 @media (max-width:450px){
-
    html{
       font-size: 50%;
    }
-
 }

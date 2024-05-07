@@ -81,6 +81,22 @@ header {
     color: #162938;
 }
 
+.hero {
+    position: relative;
+    width: 50%; /* Set the width of the hero section */
+    height: auto; /* Allow the height to adjust based on the image aspect ratio */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.hero-image {
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 50%; /* Set the width to fill the container */
+    height: auto; /* Allow the height to adjust based on the image aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+
 .wrapper {
     position: relative;
     width: 400px;
